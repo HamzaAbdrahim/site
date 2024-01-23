@@ -1,0 +1,62 @@
+@media screen and (max-width:576px) {
+    .dowload-app .section-titel {
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:380px) {
+    .sherd_box {
+        width: 95%;
+       }
+
+}
+@media screen and (min-width:330px) {
+
+}
+@media screen and (min-width:400px) {
+
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+
+}
+@media screen and (min-width:830px) and (max-width:992px) {    
+}
+
+@media (max-width:992px) {
+    .hero-section .website-titel {
+        font-size: 1.3rem;
+    }
+    .hero-section .hero-titel {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .website-logo {
+        max-width: 9.625rem;
+        height: 3.6875rem;
+
+    }
+    .outline-btn {
+        height: 3.5Rem;
+    }
+    .dowload-app .section-titel {
+        font-size: clamp(1.5rem ,4vw , 2rem);
+    }
+    .section-titel span {
+        min-height: 3.71563rem;
+    }
+    .social-media-button {
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) {
+    .res-two-col {
+        grid-template-columns: repeat(2 , 1fr);
+    } 
+    .user-content .username {
+        font-size: 1.5rem;
+    }
+
+.user-content .role {
+    font-size: 1rem;
+}
+}

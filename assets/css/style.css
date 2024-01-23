@@ -1,0 +1,216 @@
+/*
+
+TemplateMo 591 villa agency
+
+https://templatemo.com/tm-591-villa-agency
+
+*/
+
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+04. header
+05. banner
+06. features
+07. testimonials
+08. contact
+09. footer
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css put your font here
+--------------------------------------------- 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&display=swap');
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x:hidden;
+  height:100%;
+}
+
+a {
+  text-decoration: none ;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+button,
+textarea {
+  outline-color: transparent;
+  border:none;
+  background-color: inherit;
+}
+textarea {
+    resize: none;
+  }
+/* 
+---------------------------------------------
+Global Styles
+--------------------------------------------- 
+*/
+:root {
+  /* Fonts */
+  --font-syne: "Syne", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
+
+  /* Colors */
+  --White: #FFFFFF;
+  --Orange: #FF9143;
+  --Black: #1A1A1A;
+  --Dark_Gray: #262A2C;
+  --Grey-200: #E5E6EB;
+  --Grey-50: #F9FAFB;
+  --Grey-100: #F4F4F6;
+  --Grey-200: #E5E6EB;
+  --Grey-300: #D3D5DA;
+  --Grey-400: #9EA3AE;
+  --Grey-500: #6C727F;
+  --Grey-600: #4D5461;
+  --Grey-700: #394150;
+  --Grey-800: #212936;
+  --Grey-900: #0B0A0F;
+  
+  /* Line Gradient */
+
+}
+
+/* handel fonts */
+.Headline-1 {
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 4.95rem */
+  letter-spacing: -0.045rem;
+}
+.Headline-2 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 5.6rem */
+  letter-spacing: -0.04rem;
+}
+.Headline-3 {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 4.375rem */
+  letter-spacing: -0.035rem;
+}
+.Headline-4 {
+  font-family: var(--font-rubik);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 1.875rem */
+  letter-spacing: -0.015rem;
+}
+.Body-Large {
+  font-family: var(--font-rubik);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%; /* 1.8125rem */
+  letter-spacing: -0.00625rem;
+}
+.Body-Medium {
+  font-family: var(--font-rubik);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 1.6rem */
+}
+.Button {
+  font-family: var(--font-rubik);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 1.6rem */
+}
+
+
+body {
+  font-family: var(--font-syne);
+  color: var(--White);
+  background-color: var(--Black);
+}
+
+
+
+
+
+
+
