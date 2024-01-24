@@ -4,9 +4,6 @@
     }
 }
 @media screen and (max-width:380px) {
-    .sherd_box {
-        width: 95%;
-       }
 
 }
 @media screen and (min-width:330px) {
@@ -22,6 +19,10 @@
 }
 
 @media (max-width:992px) {
+    .sherd_box {
+        width: 85%;
+        height: 55%;
+    }
     .hero-section .website-titel {
         font-size: 1.3rem;
     }
@@ -46,9 +47,26 @@
     .social-media-button {
         width: 100%;
     }
+    .tabel-container .first-img {
+        width: 14.5rem;
+        left: 0;
+        bottom: -7rem;
+    }
+    .tabel-container .second-img {
+        bottom: 3.5rem;
+        right: -1rem;
+        height: 17rem;
+    }
+    .tabel-container .outline-white-button {
+        max-width: 70%;
+    }
 }
 
 @media (min-width:992px) {
+    .sherd_box {
+        max-width:38.3125rem;
+        min-height:35.0625rem;
+    }
     .res-two-col {
         grid-template-columns: repeat(2 , 1fr);
     } 

@@ -750,7 +750,6 @@ line-height: normal;
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 70vh;
   transform: translate(-50% , -50%);
   background-color: white;
   border-radius: 1.25rem;
@@ -796,9 +795,6 @@ margin-block: 1rem;
   height: 2.8125rem;
 }
 @media (min-width:740px) {
-  .sherd_box {
-    max-width: 60%;
-  }
   .sherd_box .titel  {
     margin-block:  clamp(2rem , 4vw , 3.81rem) clamp( 2.12rem , 6vw , 4.12rem);
   }
@@ -810,9 +806,6 @@ margin-block: 1rem;
   }
 }
 @media (max-width:740px) {
-  .sherd_box {
-   width: 80%;
-  }
   .outline-button {
     width: 100%;
   }
@@ -930,6 +923,13 @@ start sidebar section
   font-weight: 700;
   line-height: normal;
 }
+aside {
+  transform: translateX(-9999rem);
+  transition: .5s;
+}
+aside.active {
+  transform: translateX(0);
+}
 .sidebar-link  {
   color: #000;
 font-size: 0.75rem;
@@ -941,6 +941,14 @@ line-height: normal;
   height: 0.09375rem;
   background-color: #2C712C;
 }
+.sidebar-link i {
+  font-size: 1.5625rem;
+  color: #9C9C9C;
+}
+.sidebar-link.active i {
+  box-shadow: 0px 4px 41.8px 0px #5CD65C inset;
+  color: #5CD65C;
+}
 
 .sidebar-sprater {
   color: #000;
@@ -948,7 +956,7 @@ line-height: normal;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  max-width: 15ch;
+  width: 9rem;
 }
 
 .logout-link {
@@ -957,7 +965,6 @@ font-size: 1.125rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-margin-top: 2.75rem;
 }
 
 /* 
@@ -1035,7 +1042,325 @@ margin-inline: auto;
   background-color: #32B632;
 }
 
+/* start singup form  */
+.singup-form .form-label {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.singup-form .form-control {
+  border-radius: 0.75rem;
+  border: 3px solid #2C712C;
+  box-shadow: 0px 4px 9px 3px rgba(190, 190, 190, 0.27);
+  height: 2.3125rem;
+  &::placeholder {
+    color: #C8C8C8;
+font-size: 0.6875rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+}
+.singup-form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #ff0000; /* Replace with your desired color */
+  border-color: #ff0000; /* Replace with your desired color */
+}
+.singup-form button {
+  border-radius: 0.625rem;
+background: #5CD65C;
+width: 80%;
+min-height: 2.375rem;
+display: grid;
+place-items: center;
+color: white;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+/* end singup form  */
 
+/* start resive number in your email  */
+.resv-msg {
+  color: #9C9C9C;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.resv-msg span {
+  color: #000;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+/* start postes section  */
+.user-dmand {
+  border-radius: 1.25rem;
+background: #FFF;
+box-shadow: 0px 4px 33.5px 0px rgba(0, 0, 0, 0.15);
+}
+.user-dmand .user-img {
+  max-width: 7rem;
+max-height: 7.45075rem;
+}
+.user-dmand .user-info {
+  width: 95%;
+  padding-block: 1rem;
+  margin-inline: auto;
+}
+.user-dmand .user-info .user-name {
+  color: #000;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.user-dmand .user-info .dmaed-link {
+  color: #9C9C9C;
+font-size: 0.625rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.user-dmand .user-info .post-content  {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.user-dmand .user-info .user-loction {
+  color: #9C9C9C;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.user-dmand .user-info .Budget {
+  color: #9C9C9C;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.user-dmand .user-info .respons {
+  color: #9C9C9C;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.user-dmand .user-info .respons {
+  color: #000;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.user-dmand .budget-type {
+  border-radius: 1.25rem 0rem 0.625rem 0rem;
+background: #5CD65C;
+display: grid;
+place-items: center;
+width: 9.5rem;
+height: 2.5625rem;
+color: #FFF;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+position: absolute;
+top: 0;
+left: 0;
+}
+.user-dmand .dots span {
+  width:clamp(.5rem ,4vw ,1rem ) ;
+  height:clamp(.5rem ,4vw ,1rem ) ;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+}
+.user-dmand .dots span.active {
+  background-color: #5CD65C;
+}
+/* end postes section  */
+
+/* start Mes informations personnelles */
+.informations-titel {
+font-size: 1.5625rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: clamp(2rem , 4vw , 3.5rem);
+}
+.user-info-link {
+  color: #000;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.informations-section .right-content {
+  border-radius: 0.625rem;
+border: 1.5px solid rgba(156, 156, 156, 0.49);
+background: #FFF;
+padding: 1.25rem 1.81rem;
+}
+.right-content .card-titel {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+.right-content .card-pargraf {
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: start;
+}
+.left-content .form-label {
+  color: #000;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: relative;
+}
+.left-content .form-label::after {
+  content: "*";
+  color: #F00;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: absolute; right: -.5rem;
+top: 50%;
+transform: translateY(-50%);
+}
+.left-content .form-control {
+  text-align: start;
+  padding-left: 1.5rem;
+  height: 2.5rem;
+  border-radius: 0.625rem;
+border: 1.5px solid rgba(156, 156, 156, 0.49);
+background: #FFF;
+}
+.left-content .form-select {
+  border-radius: 0.625rem;
+border: 1.5px solid rgba(156, 156, 156, 0.49);
+height: 2.5rem;
+}
+.left-content .form-select  option {
+font-size: 0.8125rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.checkbox-titel {
+  font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: left;
+}
+.more-info  .form-check-label {
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.more-info .form-check-input  {
+  width: 2em;
+  height: 2em;
+} 
+.save-button {
+  border-radius: 1.25rem;
+background: #32B632;
+width: 14.625rem;
+height: 3.625rem;
+display: grid;
+place-items: center;
+color: #FFF;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+/* handel select */
+.custom-select {
+  border-radius: 0.625rem;
+  border: 1.5px solid rgba(156, 156, 156, 0.49);
+  background: #fff;
+}
+/* end Mes informations personnelles */
+
+.tabel-container {
+  background: linear-gradient(91deg, #5CD65C 3.1%, rgba(118, 206, 48, 0.38) 99.73%);
+  min-height: 18.75rem;
+}
+.tabel-container .first-img {
+  position: absolute;
+  max-width: 40.5rem;
+  left: 0;
+  bottom: -11rem;
+}
+.tabel-container .second-img {
+  position: absolute;
+  bottom: -8.5rem;
+  right: -1rem;
+}
+.tabel-container .outline-white-button {
+  border-radius: 2.5rem;
+border: 2.5px solid #FFF;
+width: 22rem;
+height: 5.125rem;
+display: grid;
+place-items: center;
+color: #FFF;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.tabel-container h4 {
+  color: #FFF;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.tabel-container p {
+  color: #FFF;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+max-width: 38ch;
+margin-top:clamp( 3.5rem,4vw , 5rem);
+}
+.small-img-one {
+  position: absolute;
+height: 2.74381rem;
+transform: rotate(-92.767deg);
+right: 9rem;
+}
+.small-img-two {
+  position: absolute;
+  height: 3.125rem;
+  transform: rotate(32.653deg);
+  right: 11.5rem;
+  bottom: 5rem;
+}
+.small-img-three {
+  position: absolute;
+  height: 3.125rem;
+  transform: rotate(32.653deg);
+  right: 13rem;
+}
 
 
 
